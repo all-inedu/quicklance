@@ -8,6 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/79dc5507a6.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
   <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
     rel='stylesheet' type='text/css'>
   <style>
@@ -20,6 +24,16 @@
       max-width: 100%;
       scroll-margin-top: 100px;
       height: auto
+    }
+
+    .vh-75 {
+      height: 90vh;
+    }
+
+    @media (min-width: 768px) {
+      .vh-md-100 {
+        height: 100vh !important;
+      }
     }
   </style>
 </head>
@@ -83,7 +97,7 @@
   </nav>
 
   <div class="container-fluid form-floating p-md-0">
-    <img src="assets/img/Header.png" class="img-fluid vh-100 w-100">
+    <img src="assets/img/Header.png" class="img-fluid vh-md-100 w-100">
   </div>
 
   <div class="container-fluid p-5" id="about-us" style="scroll-margin-top: 75px;">
@@ -106,7 +120,7 @@
     </div>
   </div>
 
-  <div class="container-fluid p-5" id="offer" style="scroll-margin-top: 75px;">
+  <div class="container-fluid p-5 d-none" id="offer" style="scroll-margin-top: 75px;">
     <h1 class="pb-4 text-center">What we offer</h1>
     <div class="row row-cols-md-2 row-cols-1 px-md-0 px-md-5">
       <div class="col">
@@ -196,7 +210,7 @@
   <footer class="text-center text-lg-start bg-light text-muted">
     <section class="d-flex justify-content-center justify-content-lg-between p-md-4 border-bottom">
       <div class="ms-md-5 d-none d-lg-block">
-        <span><img src="assets/img/Logo.png" alt="" width="40" height="30" class="d-inline-block align-text-top">
+        <span><img src="assets/img/Logo.png" alt="" width="40" height="30" class="d-inline-block align-items-center">
           QuickLance</span>
       </div>
 
@@ -211,11 +225,11 @@
         </ul>
       </div>
 
-      <div class="px-md-5">
-        <a href="..." class="me-md-4 text-reset fa-brands fa-instagram"></a>
-        <a href="..." class="me-md-4 text-reset fa-brands fa-facebook"></a>
-        <a href="..." class="me-md-4 text-reset fa-brands fa-github"></a>
-        <a href="..." class="me-md-4 text-reset fa-brands fa-linkedin"></a>
+      <div class="nav px-md-5 align-items-center">
+        <a href="..." class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-instagram"></a>
+        <a href="..." class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-facebook"></a>
+        <a href="..." class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-github"></a>
+        <a href="..." class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-linkedin"></a>
       </div>
     </section>
   </footer>
@@ -223,6 +237,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
