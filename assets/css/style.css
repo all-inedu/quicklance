@@ -23,6 +23,12 @@
     width: 100%;
 }
 
+.gplay {
+    width: 200px;
+    cursor: pointer;
+}
+
+
 .bg-overflow {
     position: absolute;
     top: 0;
