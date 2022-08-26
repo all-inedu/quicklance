@@ -14,17 +14,16 @@
   <link rel="manifest" href="assets/favicon/site.webmanifest">
   <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
     rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"
+    integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
   <style>
     .mo {
       font-family: 'Montserrat';
     }
 
-    #vision-mission {
-      background: url(assets/img/Vision\ and\ Mission.png);
-      max-width: 100%;
-      scroll-margin-top: 100px;
-      height: auto
-    }
 
     .vh-75 {
       height: 90vh;
@@ -87,13 +86,13 @@
   </nav>
 
   <nav class="navbar bg-light fixed-top d-md-block d-none">
-    <div class="container-fluid">
-      <a class="navbar-brand ms-md-5" href="#">
+    <div class="container">
+      <a class="navbar-brand" href="#">
         <img src="assets/img/Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
         QuickLance
       </a>
 
-      <ul class="nav justify-content-end pe-md-5">
+      <ul class="nav justify-content-end">
         <li class="nav-item">
           <a class="nav-link text-danger" href="#about-us">About Us</a>
         </li>
@@ -110,32 +109,75 @@
     </div>
   </nav>
 
-  <div class="container-fluid form-floating p-0 align-items-center" id="home">
-    <img src="assets/img/Header-empty.png" class="img-fluid vh-md-100 w-100">
-    <div class="position-absolute top-50 start-0 translate-middle-y p-md-5 pt-5">
-      <img src="assets/img/Logo-blank.png" alt="" width="140" height="80" class="ps-md-5">
-      <h1 class="fs-md-1 text-light ps-md-5">QuickLance</h1>
-      <p class="fs-md-5 text-light  ps-md-5 ">#Swipe To Start</p>
-      <p class="fs-md-5 text-light  ps-md-5 ">#The Future of Freelance</p>
+  <div class="container-fluid p-0 align-items-center" id="home">
+    <div class="bg-overflow"></div>
+    <div class="container h-100 position-relative" style="z-index:2;">
+      <div class="row align-items-center h-100">
+        <div class="col-md-8 text-md-start text-center">
+          <img src="assets/img/Logo-blank.png" alt="" width="130" style="margin-left: -15px;">
+          <h4 class="text-white fw-normal lh-base">
+            QuickLance is an app that supercharges your hiring process. It turns freelancing to another level. With our
+            swipe
+            feature, employers will be able to screen candidates faster and more transparent. As a freelancer, you will
+            be able to
+            display your work through quality videos.
+          </h4>
+          <p class="text-light my-0">#Swipe To Start #The Future of Freelance</p>
+          <a href="https://play.google.com/store/apps/details?id=com.quicklance.jobseek" target="_blank"
+            class="btn btn-success px-4 mt-4">
+            <i class="fa-solid fa-download me-2"></i>
+            Install Now
+          </a>
+        </div>
+        <div class="col-md-4">
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="apps text-center">
+                    <img src="assets/img/apps-1.webp" alt="quicklance apps" class="apps-img">
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="apps text-center">
+                    <img src="assets/img/apps-2.webp" alt="quicklance apps" class="apps-img">
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="apps text-center">
+                    <img src="assets/img/apps-3.webp" alt="quicklance apps" class="apps-img">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+
+      </div>
     </div>
   </div>
 
-  <div class="container-fluid p-5" id="about-us" style="scroll-margin-top: 75px;">
-    <div class="row row-cols-md-2 row-cols-1 px-md-0 px-md-5 align-items-center">
-      <div class="col pt-md-0 pt-4">
-        <h1>
-          About Us
-        </h1>
-        <p class="mb-0">
-          During the pandemic, economic activity was down and surely unemployment was increasing. Me, thinking of a way
-          to help those in need of a job, I researched on the sectors I can help. The one i saw most opportunity in was
-          freelance services, right now freelancers can't find enough work and are managing an Irregular Income. So my
-          solution was to create an app which is more transparent and has a faster search process. And that is how
-          QuickLance was created.
-        </p>
-      </div>
-      <div class="col order-first order-md-last">
-        <img src="assets/img/About Us Image.png" class="img-fluid">
+  <div class="container-fluid" id="about-us" style="scroll-margin-top: 75px;">
+    <div class="container">
+      <div class="row row-cols-md-2 row-cols-1 align-items-center g-3">
+        <div class="col pt-md-0 pt-4">
+          <h1 class="fw-semibold">
+            About Us
+          </h1>
+          <h6 class="mb-0 fw-normal" style="line-height: 30px;">
+            During the pandemic, economic activity was down and surely unemployment was increasing. Me, thinking of a
+            way
+            to help those in need of a job, I researched on the sectors I can help. The one i saw most opportunity in
+            was
+            freelance services, right now freelancers can't find enough work and are managing an Irregular Income. So my
+            solution was to create an app which is more transparent and has a faster search process. And that is how
+            QuickLance was created.
+          </h6>
+        </div>
+        <div class="col order-first order-md-last px-md-5 px-0">
+          <img src="assets/img/About Us Image.png" class="img-fluid">
+        </div>
       </div>
     </div>
   </div>
@@ -185,44 +227,53 @@
     </div>
   </div>
 
-  <div class="container-fluid form-floating text-light py-md-4" id="vision-mission">
-    <h1 class="text-center p-4">Vision & Mission</h1>
-    <div class="row row-cols-1 row-cols-md-2 p-md-0 p-md-5">
-      <div class="col px-5">
-        <h3 class="text-center pb-4">
-          Vision
-        </h3>
-        <p>
-          To provide a safe place where job opportunities may come. To be a help in the process of people getting jobs.
-        </p>
-      </div>
-      <div class="col px-5 px-md-0">
-        <h3 class="text-center pb-4">
-          Mission
-        </h3>
-        <p>
-          QuickLance's mission is to supercharge your hiring process. Turning freelancing to another level. With our
-          swipe feature, employers will be able to screen candidates faster and more transparently. As a freelancer, you
-          will be able to display your work through quality videos. <br> To create a fast, efficient and simple app that
-          supercharges the hiring process for our users.
-        </p>
+  <div class="container-fluid form-floating text-light" id="vision-mission">
+    <div class="container">
+      <h1 class="text-center fw-semibold mb-5">Vision & Mission</h1>
+      <div class="row justify-content-between align-items-start g-5">
+        <div class="col-md-5">
+          <h3 class="text-center">
+            Vision
+          </h3>
+          <p>
+            To provide a safe place where job opportunities may come. To be a help in the process of people getting
+            jobs.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <h3 class="text-center">
+            Mission
+          </h3>
+          <p>
+            QuickLance's mission is to supercharge your hiring process. Turning freelancing to another level. With our
+            swipe feature, employers will be able to screen candidates faster and more transparently. As a freelancer,
+            you
+            will be able to display your work through quality videos. <br> To create a fast, efficient and simple app
+            that
+            supercharges the hiring process for our users.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid p-5" id="founder" style="scroll-margin-top: 75px;">
-    <div class="row row-cols-md-2 row-cols-1 px-md-0 px-md-5 align-items-center">
-      <div class="col text-center py-4 mb-md-0 mb-4" style="background: url('assets/img/Founder Profile.png'); background-repeat: no-repeat; background-position: center;">
-        <img src="assets/img//wallace.jpeg" alt="Wallace" class="img-fluid shadow">
-      </div>
-      <div class="col ">
-        <h5 class="text-danger "><b>Founder</b></h5>
-        <h2>Wallace</h2>
-        <p>
-          Wallace is a grade 10 student with enthusiasm in tech, finance and entrepreneurship. He took the initiative to
-          apply his enthusiasm into a project that could help him hone his skills, and one that could also help people
-          in need of jobs, which lead to him founding “QuickLance”.
-        </p>
+  <div class="container-fluid" id="founder" style="scroll-margin-top: 75px;">
+    <div class="container">
+      <div class="row row-cols-md-2 row-cols-1 align-items-center">
+        <div class="col text-center py-4 mb-md-0 mb-4"
+          style="background: url('assets/img/Founder Profile.png'); background-repeat: no-repeat; background-position: center;">
+          <img src="assets/img//wallace.jpeg" alt="Wallace" class="img-fluid shadow">
+        </div>
+        <div class="col ">
+          <h5 class="text-danger "><b>Founder</b></h5>
+          <h2>Wallace</h2>
+          <p>
+            Wallace is a grade 10 student with enthusiasm in tech, finance and entrepreneurship. He took the initiative
+            to
+            apply his enthusiasm into a project that could help him hone his skills, and one that could also help people
+            in need of jobs, which lead to him founding “QuickLance”.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -237,19 +288,19 @@
       <div>
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active text-reset" aria-current="page" href="#item-1">About Us</a>
+            <a class="nav-link active text-reset" aria-current="page" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-reset" href="#">Community</a>
+            <a class="nav-link text-reset" href="#vision-mission">Vision & Mission</a>
           </li>
         </ul>
       </div>
 
       <div class="nav px-md-5 align-items-center">
-        <a href="..." class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-instagram"></a>
-        <a href="..." class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-facebook"></a>
-        <a href="..." class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-github"></a>
-        <a href="..." class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-linkedin"></a>
+        <a href="#" class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-instagram"></a>
+        <a href="#" class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-facebook"></a>
+        <a href="#" class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-github"></a>
+        <a href="#" class="me-md-4 text-reset px-md-0 px-2 fa-brands fa-linkedin"></a>
       </div>
     </section>
   </footer>
@@ -257,6 +308,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+
+  <script>
+    new Splide('.splide', {
+      type: 'loop',
+      autoplay: true,
+      interval: 5500,
+      pagination: false
+    }).mount();
+  </script>
 
 </body>
 
